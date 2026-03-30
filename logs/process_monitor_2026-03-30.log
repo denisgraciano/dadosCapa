@@ -211,3 +211,62 @@ vara
   String should have at most 200 characters [type=string_too_long, input_value='do Trabalho de Ituverava...ntonio Marcio Rodrigues', input_type=str]
     For further information visit https://errors.pydantic.dev/2.12/v/string_too_long
 2026-03-30 13:49:30 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 13:51:55 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00007132520105150052
+2026-03-30 13:51:55 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 13:51:55 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=00007132520105150052
+2026-03-30 13:51:56 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00007132520105150052 → tribunal=trt15
+2026-03-30 13:52:04 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=00007132520105150052: DataJud não retornou resultados para CNJ=00007132520105150052 → ativando fallback
+2026-03-30 13:52:04 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=00007132520105150052: ScraperCollector não suporta tribunal 'trt15' → tentando Escavador
+2026-03-30 13:52:04 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=00007132520105150052
+2026-03-30 13:52:04 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=00007132520105150052
+2026-03-30 13:52:08 │ INFO     │ collectors.escavador:_extrair_dados_da_busca:299 - [EscavadorCollector] Da busca: classe=None partes=1
+2026-03-30 13:52:08 │ INFO     │ collectors.escavador:_buscar_e_extrair:114 - [EscavadorCollector] Dados extraídos da busca: 1 partes
+2026-03-30 13:52:09 │ INFO     │ pipeline.orquestrador:_processar_cnj:69 - Capa persistida │ processo_id=36 │ fonte=scraping
+2026-03-30 13:52:09 │ INFO     │ pipeline.orquestrador:_processar_cnj:74 - Movimentações: 0 novas de 0 coletadas
+2026-03-30 13:52:09 │ INFO     │ pipeline.orquestrador:_processar_cnj:80 - Partes coletadas: 1 total │ polos: {'autor'}
+2026-03-30 13:52:09 │ INFO     │ pipeline.orquestrador:_processar_cnj:86 - Inserindo 1 partes e validando 1 autor/réu
+2026-03-30 13:52:09 │ INFO     │ pipeline.orquestrador:_processar_cnj:88 - IDs inseridos/existentes: [53]
+2026-03-30 13:52:09 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Bunge Fertilizantes S': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZcRL68HjRmzjjGtQPXb'}
+2026-03-30 13:52:09 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Bunge Fertilizantes S' → '—' │ score=0.000
+2026-03-30 13:52:09 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 14:01:06 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00199342620178130093
+2026-03-30 14:01:07 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 14:01:07 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=00199342620178130093
+2026-03-30 14:01:07 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00199342620178130093 → tribunal=tjam
+2026-03-30 14:01:20 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=00199342620178130093: DataJud não retornou resultados para CNJ=00199342620178130093 → ativando fallback
+2026-03-30 14:01:20 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=00199342620178130093: ScraperCollector não suporta tribunal 'tjam' → tentando Escavador
+2026-03-30 14:01:20 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=00199342620178130093
+2026-03-30 14:01:20 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=00199342620178130093
+2026-03-30 14:01:27 │ INFO     │ collectors.escavador:_extrair_dados_da_busca:299 - [EscavadorCollector] Da busca: classe='APELAÇÃO CÍVEL' partes=3
+2026-03-30 14:01:27 │ INFO     │ collectors.escavador:_buscar_e_extrair:114 - [EscavadorCollector] Dados extraídos da busca: 3 partes
+2026-03-30 14:01:28 │ INFO     │ pipeline.orquestrador:_processar_cnj:69 - Capa persistida │ processo_id=37 │ fonte=scraping
+2026-03-30 14:01:28 │ INFO     │ pipeline.orquestrador:_processar_cnj:74 - Movimentações: 0 novas de 0 coletadas
+2026-03-30 14:01:28 │ INFO     │ pipeline.orquestrador:_processar_cnj:80 - Partes coletadas: 3 total │ polos: {'autor', 'reu'}
+2026-03-30 14:01:28 │ INFO     │ pipeline.orquestrador:_processar_cnj:86 - Inserindo 3 partes e validando 3 autor/réu
+2026-03-30 14:01:28 │ INFO     │ pipeline.orquestrador:_processar_cnj:88 - IDs inseridos/existentes: [54, 55, 56]
+2026-03-30 14:01:29 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Leonardo Fialho Pinto': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZd8ZwhyJ7y7VwQgSGXo'}
+2026-03-30 14:01:29 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Leonardo Fialho Pinto' → '—' │ score=0.000
+2026-03-30 14:01:29 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Banco Bmg S': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZd8b6uPeYuuxDfc82Lf'}
+2026-03-30 14:01:29 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Banco Bmg S' → '—' │ score=0.000
+2026-03-30 14:01:29 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Rita José de Oliveira;': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZd8cBQ7gmTpq4wARQpz'}
+2026-03-30 14:01:29 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Rita José de Oliveira;' → '—' │ score=0.000
+2026-03-30 14:01:29 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 14:01:59 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 01279822700008260090
+2026-03-30 14:01:59 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 14:01:59 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=01279822700008260090
+2026-03-30 14:02:00 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=01279822700008260090 → tribunal=tjsp
+2026-03-30 14:02:58 │ INFO     │ collectors.datajud:_parse_source:244 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-30 14:02:58 │ WARNING  │ pipeline.orquestrador:_coletar:118 - DataJud não retornou partes para CNJ=01279822700008260090 (LGPD ou tribunal não transmite) → buscando partes via scraper
+2026-03-30 14:02:58 │ INFO     │ collectors.scraper:collect:218 - [ScraperCollector] Iniciando scraping CNJ=01279822700008260090 tribunal=tjsp
+2026-03-30 14:03:04 │ INFO     │ collectors.scraper:_scrape_tjsp:284 - [ScraperCollector] Extraído: classe='Execução Fiscal' partes=2 movimentações=0
+2026-03-30 14:03:04 │ INFO     │ pipeline.orquestrador:_complementar_partes_scraper:143 - Partes complementadas via scraper para CNJ=01279822700008260090: 2 parte(s) encontrada(s)
+2026-03-30 14:03:05 │ INFO     │ pipeline.orquestrador:_processar_cnj:69 - Capa persistida │ processo_id=1 │ fonte=datajud
+2026-03-30 14:03:05 │ INFO     │ pipeline.orquestrador:_processar_cnj:74 - Movimentações: 0 novas de 0 coletadas
+2026-03-30 14:03:05 │ INFO     │ pipeline.orquestrador:_processar_cnj:80 - Partes coletadas: 2 total │ polos: {'autor', 'reu'}
+2026-03-30 14:03:05 │ INFO     │ pipeline.orquestrador:_processar_cnj:86 - Inserindo 2 partes e validando 2 autor/réu
+2026-03-30 14:03:05 │ INFO     │ pipeline.orquestrador:_processar_cnj:88 - IDs inseridos/existentes: [57, 58]
+2026-03-30 14:03:05 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Prefeitura do Município de São Paulo - Sp': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZdFfRZ1QijG7FUqNb6T'}
+2026-03-30 14:03:05 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Prefeitura do Município de São Paulo - Sp' → '—' │ score=0.000
+2026-03-30 14:03:05 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Eletropaulo Metropolitana Eletricidade de S P S/A': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZdFgN7SDBrkCA5C1Mzp'}
+2026-03-30 14:03:05 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Eletropaulo Metropolitana Eletricidade de S P S/A' → '—' │ score=0.000
+2026-03-30 14:03:05 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
