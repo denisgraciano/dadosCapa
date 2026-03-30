@@ -184,17 +184,35 @@ class Orquestrador:
             return dados_base
 
     async def _coletar_via_scraper(self, cnj: str) -> DadosCapa | None:
-        """Fallback total — scraper substitui DataJud inteiramente."""
+        """
+        Fallback total — scraper substitui DataJud inteiramente.
+        Se o scraper não suportar o tribunal ou receber CAPTCHA,
+        aciona o Escavador como terceiro fallback.
+        """
         try:
             codigo = _extract_tribunal_code(cnj)
             tribunal = TRIBUNAL_MAP.get(codigo, "desconhecido")
             scraper = ScraperCollector(tribunal=tribunal)
             return await scraper.collect(cnj)
         except CaptchaRequiredError as exc:
-            logger.warning(f"Scraper bloqueado por CAPTCHA para CNJ={cnj}: {exc}")
-            return None
+            logger.warning(
+                f"Scraper bloqueado por CAPTCHA para CNJ={cnj}: {exc} → tentando Escavador"
+            )
+            return await self._coletar_via_escavador(cnj)
         except CollectorUnavailableError as exc:
-            logger.error(f"Scraper indisponível para CNJ={cnj}: {exc}")
+            logger.warning(
+                f"Scraper indisponível para CNJ={cnj}: {exc} → tentando Escavador"
+            )
+            return await self._coletar_via_escavador(cnj)
+
+    async def _coletar_via_escavador(self, cnj: str) -> DadosCapa | None:
+        """Coleta completa via Escavador quando DataJud e scraper falharam."""
+        try:
+            logger.info(f"[Escavador] Coleta completa para CNJ={cnj}")
+            collector = EscavadorCollector()
+            return await collector.collect(cnj)
+        except CollectorUnavailableError as exc:
+            logger.error(f"Escavador também indisponível para CNJ={cnj}: {exc}")
             return None
 
     async def _validar_partes(

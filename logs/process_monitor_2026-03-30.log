@@ -1,0 +1,213 @@
+2026-03-30 08:37:27 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00206387220018170001
+2026-03-30 08:37:28 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 08:37:28 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=00206387220018170001
+2026-03-30 08:37:28 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00206387220018170001 → tribunal=tjpe
+2026-03-30 08:38:55 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=00206387220018170001: DataJud não retornou resultados para CNJ=00206387220018170001 → ativando fallback
+2026-03-30 08:38:57 │ ERROR    │ pipeline.orquestrador:_coletar_via_scraper:197 - Scraper indisponível para CNJ=00206387220018170001: ScraperCollector não suporta tribunal 'tjpe'
+2026-03-30 08:38:57 │ WARNING  │ pipeline.orquestrador:_processar_cnj:64 - CNJ=00206387220018170001 ignorado — sem dados disponíveis
+2026-03-30 08:38:57 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 08:39:34 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00206387220018170001
+2026-03-30 08:39:35 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 08:39:35 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=00206387220018170001
+2026-03-30 08:39:35 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00206387220018170001 → tribunal=tjpe
+2026-03-30 08:39:39 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=00206387220018170001: DataJud não retornou resultados para CNJ=00206387220018170001 → ativando fallback
+2026-03-30 08:39:39 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=00206387220018170001: ScraperCollector não suporta tribunal 'tjpe' → tentando Escavador
+2026-03-30 08:39:39 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=00206387220018170001
+2026-03-30 08:39:39 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=00206387220018170001
+2026-03-30 08:40:09 │ INFO     │ collectors.escavador:_extrair_dados_da_busca:299 - [EscavadorCollector] Da busca: classe=None partes=1
+2026-03-30 08:40:09 │ INFO     │ collectors.escavador:_buscar_e_extrair:114 - [EscavadorCollector] Dados extraídos da busca: 1 partes
+2026-03-30 08:40:10 │ INFO     │ pipeline.orquestrador:_processar_cnj:69 - Capa persistida │ processo_id=31 │ fonte=scraping
+2026-03-30 08:40:10 │ INFO     │ pipeline.orquestrador:_processar_cnj:74 - Movimentações: 0 novas de 0 coletadas
+2026-03-30 08:40:10 │ INFO     │ pipeline.orquestrador:_processar_cnj:80 - Partes coletadas: 1 total │ polos: {'autor'}
+2026-03-30 08:40:10 │ INFO     │ pipeline.orquestrador:_processar_cnj:86 - Inserindo 1 partes e validando 1 autor/réu
+2026-03-30 08:40:10 │ INFO     │ pipeline.orquestrador:_processar_cnj:88 - IDs inseridos/existentes: [35]
+2026-03-30 08:40:10 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Hsbc Bank Brasil S': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZCdUeN1yn2LY2msHJ8V'}
+2026-03-30 08:40:10 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Hsbc Bank Brasil S' → '—' │ score=0.000
+2026-03-30 08:40:10 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 11:33:36 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00007132520105150052
+2026-03-30 11:33:37 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 11:33:37 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=00007132520105150052
+2026-03-30 11:33:37 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00007132520105150052 → tribunal=trt15
+2026-03-30 11:33:50 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=00007132520105150052: DataJud não retornou resultados para CNJ=00007132520105150052 → ativando fallback
+2026-03-30 11:33:50 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=00007132520105150052: ScraperCollector não suporta tribunal 'trt15' → tentando Escavador
+2026-03-30 11:33:50 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=00007132520105150052
+2026-03-30 11:33:50 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=00007132520105150052
+2026-03-30 11:34:19 │ INFO     │ collectors.escavador:_extrair_dados_da_busca:299 - [EscavadorCollector] Da busca: classe=None partes=1
+2026-03-30 11:34:20 │ ERROR    │ pipeline.orquestrador:executar:51 - Erro não tratado ao processar CNJ=00007132520105150052: 1 validation error for DadosCapa
+vara
+  String should have at most 200 characters [type=string_too_long, input_value='do Trabalho de Ituverava...ntonio Marcio Rodrigues', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_too_long
+2026-03-30 11:34:20 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 11:37:24 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00007132520105150052
+2026-03-30 11:37:25 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 11:37:25 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=00007132520105150052
+2026-03-30 11:37:25 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00007132520105150052 → tribunal=trt15
+2026-03-30 11:37:30 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=00007132520105150052: DataJud não retornou resultados para CNJ=00007132520105150052 → ativando fallback
+2026-03-30 11:37:30 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=00007132520105150052: ScraperCollector não suporta tribunal 'trt15' → tentando Escavador
+2026-03-30 11:37:30 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=00007132520105150052
+2026-03-30 11:37:30 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=00007132520105150052
+2026-03-30 11:37:36 │ INFO     │ collectors.escavador:_extrair_dados_da_busca:299 - [EscavadorCollector] Da busca: classe=None partes=1
+2026-03-30 11:37:38 │ ERROR    │ pipeline.orquestrador:executar:51 - Erro não tratado ao processar CNJ=00007132520105150052: 1 validation error for DadosCapa
+vara
+  String should have at most 200 characters [type=string_too_long, input_value='do Trabalho de Ituverava...ntonio Marcio Rodrigues', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_too_long
+2026-03-30 11:37:38 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 11:48:43 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00007132520105150052
+2026-03-30 11:48:44 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 11:48:44 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=00007132520105150052
+2026-03-30 11:48:44 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00007132520105150052 → tribunal=trt15
+2026-03-30 11:48:56 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=00007132520105150052: DataJud não retornou resultados para CNJ=00007132520105150052 → ativando fallback
+2026-03-30 11:48:56 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=00007132520105150052: ScraperCollector não suporta tribunal 'trt15' → tentando Escavador
+2026-03-30 11:48:56 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=00007132520105150052
+2026-03-30 11:48:56 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=00007132520105150052
+2026-03-30 11:49:04 │ ERROR    │ pipeline.orquestrador:executar:51 - Erro não tratado ao processar CNJ=00007132520105150052: 'EscavadorCollector' object has no attribute '_extrair_capa_do_texto_busca'
+2026-03-30 11:49:04 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 11:50:40 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00007132520105150052
+2026-03-30 11:50:42 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 11:50:42 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=00007132520105150052
+2026-03-30 11:50:43 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00007132520105150052 → tribunal=trt15
+2026-03-30 11:50:55 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=00007132520105150052: DataJud não retornou resultados para CNJ=00007132520105150052 → ativando fallback
+2026-03-30 11:50:55 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=00007132520105150052: ScraperCollector não suporta tribunal 'trt15' → tentando Escavador
+2026-03-30 11:50:55 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=00007132520105150052
+2026-03-30 11:50:55 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=00007132520105150052
+2026-03-30 11:51:00 │ INFO     │ collectors.escavador:_extrair_dados_da_busca:299 - [EscavadorCollector] Da busca: classe=None partes=1
+2026-03-30 11:51:01 │ ERROR    │ pipeline.orquestrador:executar:51 - Erro não tratado ao processar CNJ=00007132520105150052: 1 validation error for DadosCapa
+vara
+  String should have at most 200 characters [type=string_too_long, input_value='do Trabalho de Ituverava...ntonio Marcio Rodrigues', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_too_long
+2026-03-30 11:51:01 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 11:51:23 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00015260620118160160
+2026-03-30 11:51:24 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 11:51:24 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=00015260620118160160
+2026-03-30 11:51:24 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00015260620118160160 → tribunal=tjrn
+2026-03-30 11:51:36 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=00015260620118160160: DataJud não retornou resultados para CNJ=00015260620118160160 → ativando fallback
+2026-03-30 11:51:36 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=00015260620118160160: ScraperCollector não suporta tribunal 'tjrn' → tentando Escavador
+2026-03-30 11:51:36 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=00015260620118160160
+2026-03-30 11:51:36 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=00015260620118160160
+2026-03-30 11:51:51 │ ERROR    │ pipeline.orquestrador:_coletar_via_escavador:215 - Escavador também indisponível para CNJ=00015260620118160160: Processo CNJ=00015260620118160160 não encontrado no Escavador
+2026-03-30 11:51:51 │ WARNING  │ pipeline.orquestrador:_processar_cnj:64 - CNJ=00015260620118160160 ignorado — sem dados disponíveis
+2026-03-30 11:51:51 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 11:52:35 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 90499765920108130024
+2026-03-30 11:52:36 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 11:52:36 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=90499765920108130024
+2026-03-30 11:52:36 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=90499765920108130024 → tribunal=tjam
+2026-03-30 11:52:47 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=90499765920108130024: DataJud não retornou resultados para CNJ=90499765920108130024 → ativando fallback
+2026-03-30 11:52:47 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=90499765920108130024: ScraperCollector não suporta tribunal 'tjam' → tentando Escavador
+2026-03-30 11:52:47 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=90499765920108130024
+2026-03-30 11:52:47 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=90499765920108130024
+2026-03-30 11:52:52 │ INFO     │ collectors.escavador:_extrair_dados_da_busca:299 - [EscavadorCollector] Da busca: classe=None partes=6
+2026-03-30 11:52:52 │ INFO     │ collectors.escavador:_buscar_e_extrair:114 - [EscavadorCollector] Dados extraídos da busca: 6 partes
+2026-03-30 11:52:54 │ INFO     │ pipeline.orquestrador:_processar_cnj:69 - Capa persistida │ processo_id=32 │ fonte=scraping
+2026-03-30 11:52:54 │ INFO     │ pipeline.orquestrador:_processar_cnj:74 - Movimentações: 0 novas de 0 coletadas
+2026-03-30 11:52:54 │ INFO     │ pipeline.orquestrador:_processar_cnj:80 - Partes coletadas: 6 total │ polos: {'autor', 'reu'}
+2026-03-30 11:52:54 │ INFO     │ pipeline.orquestrador:_processar_cnj:86 - Inserindo 6 partes e validando 6 autor/réu
+2026-03-30 11:52:54 │ INFO     │ pipeline.orquestrador:_processar_cnj:88 - IDs inseridos/existentes: [36, 37, 38, 39, 40, 41]
+2026-03-30 11:52:54 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Credial Empreendimentos': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZTKthTvrd8Yn6M3wkRU'}
+2026-03-30 11:52:54 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Credial Empreendimentos' → '—' │ score=0.000
+2026-03-30 11:52:54 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Servicos Ltda': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZTKumhoZGJ6deVUzmMK'}
+2026-03-30 11:52:55 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Servicos Ltda' → '—' │ score=0.000
+2026-03-30 11:52:55 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Cláudia Regina Macegosso': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZTKvuAv7GRXyjai7SSN'}
+2026-03-30 11:52:55 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Cláudia Regina Macegosso' → '—' │ score=0.000
+2026-03-30 11:52:55 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Adriana da Silva': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZTKx3PEBya7CnRNqgu1'}
+2026-03-30 11:52:55 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Adriana da Silva' → '—' │ score=0.000
+2026-03-30 11:52:55 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Alexandre Otavio Barbosa Piedade': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZTKy4Q74dEQRcVy5UPP'}
+2026-03-30 11:52:55 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Alexandre Otavio Barbosa Piedade' → '—' │ score=0.000
+2026-03-30 11:52:55 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'outros': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZTKzAd7hDNwWTd83dDi'}
+2026-03-30 11:52:56 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'outros' → '—' │ score=0.000
+2026-03-30 11:52:56 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 11:54:15 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00001798520215140032
+2026-03-30 11:54:16 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 11:54:16 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=00001798520215140032
+2026-03-30 11:54:16 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00001798520215140032 → tribunal=tjro
+2026-03-30 11:54:24 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=00001798520215140032: DataJud não retornou resultados para CNJ=00001798520215140032 → ativando fallback
+2026-03-30 11:54:24 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=00001798520215140032: ScraperCollector não suporta tribunal 'tjro' → tentando Escavador
+2026-03-30 11:54:24 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=00001798520215140032
+2026-03-30 11:54:24 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=00001798520215140032
+2026-03-30 11:54:30 │ INFO     │ collectors.escavador:_extrair_dados_da_busca:299 - [EscavadorCollector] Da busca: classe='AÇÃO TRABALHISTA - RITO...: 4854/RO) Conteú' partes=5
+2026-03-30 11:54:30 │ INFO     │ collectors.escavador:_buscar_e_extrair:114 - [EscavadorCollector] Dados extraídos da busca: 5 partes
+2026-03-30 11:54:31 │ INFO     │ pipeline.orquestrador:_processar_cnj:69 - Capa persistida │ processo_id=33 │ fonte=scraping
+2026-03-30 11:54:31 │ INFO     │ pipeline.orquestrador:_processar_cnj:74 - Movimentações: 0 novas de 0 coletadas
+2026-03-30 11:54:31 │ INFO     │ pipeline.orquestrador:_processar_cnj:80 - Partes coletadas: 5 total │ polos: {'reu', 'autor'}
+2026-03-30 11:54:31 │ INFO     │ pipeline.orquestrador:_processar_cnj:86 - Inserindo 5 partes e validando 5 autor/réu
+2026-03-30 11:54:31 │ INFO     │ pipeline.orquestrador:_processar_cnj:88 - IDs inseridos/existentes: [42, 43, 44, 45, 46]
+2026-03-30 11:54:32 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Jorge Ribeiro Coutinho Gonçalves da Silva': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZTT5ZmGuDujJs6jupT7'}
+2026-03-30 11:54:32 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Jorge Ribeiro Coutinho Gonçalves da Silva' → '—' │ score=0.000
+2026-03-30 11:54:32 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Wellington Santiago Pereira': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZTT6Uq2ARLd1a5HWNnK'}
+2026-03-30 11:54:32 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Wellington Santiago Pereira' → '—' │ score=0.000
+2026-03-30 11:54:32 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Energisa S': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZTT7RdPZ6PLLWkvfKM5'}
+2026-03-30 11:54:32 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Energisa S' → '—' │ score=0.000
+2026-03-30 11:54:32 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'ABIMAEL MADEIRA FERNANDES': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZTT8Su8r27A5NREVVdv'}
+2026-03-30 11:54:32 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'ABIMAEL MADEIRA FERNANDES' → '—' │ score=0.000
+2026-03-30 11:54:33 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'ENERGISA S/A INTIMAÇÃO Fica V. Sa. intimado para tomar ciência da': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZTT9LE9jquPDvHGDErU'}
+2026-03-30 11:54:33 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'ENERGISA S/A INTIMAÇÃO Fica V. Sa. intimado para tomar ciência da' → '—' │ score=0.000
+2026-03-30 11:54:33 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 13:46:44 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00001798520215140032
+2026-03-30 13:46:45 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 13:46:45 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=00001798520215140032
+2026-03-30 13:46:45 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00001798520215140032 → tribunal=tjro
+2026-03-30 13:46:47 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=00001798520215140032: DataJud não retornou resultados para CNJ=00001798520215140032 → ativando fallback
+2026-03-30 13:46:47 │ INFO     │ collectors.scraper:collect:218 - [ScraperCollector] Iniciando scraping CNJ=00001798520215140032 tribunal=tjro
+2026-03-30 13:46:59 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=00001798520215140032: Processo CNJ=00001798520215140032 não encontrado no PJe tjro (1º e 2º grau) → tentando Escavador
+2026-03-30 13:46:59 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=00001798520215140032
+2026-03-30 13:46:59 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=00001798520215140032
+2026-03-30 13:47:04 │ INFO     │ collectors.escavador:_extrair_dados_da_busca:299 - [EscavadorCollector] Da busca: classe='AÇÃO TRABALHISTA - RITO...: 4854/RO) Conteú' partes=5
+2026-03-30 13:47:04 │ INFO     │ collectors.escavador:_buscar_e_extrair:114 - [EscavadorCollector] Dados extraídos da busca: 5 partes
+2026-03-30 13:47:07 │ INFO     │ pipeline.orquestrador:_processar_cnj:69 - Capa persistida │ processo_id=33 │ fonte=scraping
+2026-03-30 13:47:07 │ INFO     │ pipeline.orquestrador:_processar_cnj:74 - Movimentações: 0 novas de 0 coletadas
+2026-03-30 13:47:07 │ INFO     │ pipeline.orquestrador:_processar_cnj:80 - Partes coletadas: 5 total │ polos: {'reu', 'autor'}
+2026-03-30 13:47:07 │ INFO     │ pipeline.orquestrador:_processar_cnj:86 - Inserindo 5 partes e validando 5 autor/réu
+2026-03-30 13:47:07 │ INFO     │ pipeline.orquestrador:_processar_cnj:88 - IDs inseridos/existentes: [42, 43, 44, 45, 46]
+2026-03-30 13:47:07 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Jorge Ribeiro Coutinho Gonçalves da Silva': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZc33YqwicMb4yoZgoA6'}
+2026-03-30 13:47:07 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Jorge Ribeiro Coutinho Gonçalves da Silva' → '—' │ score=0.000
+2026-03-30 13:47:07 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Wellington Santiago Pereira': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZc34Wdt7VwexPsSbnbP'}
+2026-03-30 13:47:07 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Wellington Santiago Pereira' → '—' │ score=0.000
+2026-03-30 13:47:07 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Energisa S': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZc35g6Lqhz5z1E8KZCk'}
+2026-03-30 13:47:08 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Energisa S' → '—' │ score=0.000
+2026-03-30 13:47:08 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'ABIMAEL MADEIRA FERNANDES': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZc36gN8JqenBrQJkF5p'}
+2026-03-30 13:47:08 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'ABIMAEL MADEIRA FERNANDES' → '—' │ score=0.000
+2026-03-30 13:47:08 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'ENERGISA S/A INTIMAÇÃO Fica V. Sa. intimado para tomar ciência da': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZc37Tk2hwEMe4Y5nqtg'}
+2026-03-30 13:47:08 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'ENERGISA S/A INTIMAÇÃO Fica V. Sa. intimado para tomar ciência da' → '—' │ score=0.000
+2026-03-30 13:47:08 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 13:47:52 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00410608020108130707
+2026-03-30 13:47:52 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 13:47:52 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=00410608020108130707
+2026-03-30 13:47:52 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00410608020108130707 → tribunal=tjam
+2026-03-30 13:47:58 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=00410608020108130707: DataJud não retornou resultados para CNJ=00410608020108130707 → ativando fallback
+2026-03-30 13:47:58 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=00410608020108130707: ScraperCollector não suporta tribunal 'tjam' → tentando Escavador
+2026-03-30 13:47:58 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=00410608020108130707
+2026-03-30 13:47:58 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=00410608020108130707
+2026-03-30 13:48:10 │ ERROR    │ pipeline.orquestrador:_coletar_via_escavador:215 - Escavador também indisponível para CNJ=00410608020108130707: Processo CNJ=00410608020108130707 não encontrado no Escavador
+2026-03-30 13:48:10 │ WARNING  │ pipeline.orquestrador:_processar_cnj:64 - CNJ=00410608020108130707 ignorado — sem dados disponíveis
+2026-03-30 13:48:10 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 13:48:51 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 90317942520108130024
+2026-03-30 13:48:51 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 13:48:51 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=90317942520108130024
+2026-03-30 13:48:51 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=90317942520108130024 → tribunal=tjam
+2026-03-30 13:48:58 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=90317942520108130024: DataJud não retornou resultados para CNJ=90317942520108130024 → ativando fallback
+2026-03-30 13:48:58 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=90317942520108130024: ScraperCollector não suporta tribunal 'tjam' → tentando Escavador
+2026-03-30 13:48:58 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=90317942520108130024
+2026-03-30 13:48:58 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=90317942520108130024
+2026-03-30 13:49:02 │ INFO     │ collectors.escavador:_extrair_dados_da_busca:299 - [EscavadorCollector] Da busca: classe=None partes=1
+2026-03-30 13:49:02 │ INFO     │ collectors.escavador:_buscar_e_extrair:114 - [EscavadorCollector] Dados extraídos da busca: 1 partes
+2026-03-30 13:49:03 │ INFO     │ pipeline.orquestrador:_processar_cnj:69 - Capa persistida │ processo_id=35 │ fonte=scraping
+2026-03-30 13:49:03 │ INFO     │ pipeline.orquestrador:_processar_cnj:74 - Movimentações: 0 novas de 0 coletadas
+2026-03-30 13:49:03 │ INFO     │ pipeline.orquestrador:_processar_cnj:80 - Partes coletadas: 1 total │ polos: {'autor'}
+2026-03-30 13:49:03 │ INFO     │ pipeline.orquestrador:_processar_cnj:86 - Inserindo 1 partes e validando 1 autor/réu
+2026-03-30 13:49:03 │ INFO     │ pipeline.orquestrador:_processar_cnj:88 - IDs inseridos/existentes: [52]
+2026-03-30 13:49:04 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Vivo S': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZZcBf419jjQuLS9C12TS'}
+2026-03-30 13:49:04 │ INFO     │ pipeline.orquestrador:_log_validacao:259 - ✗ SEM_MATCH 'Vivo S' → '—' │ score=0.000
+2026-03-30 13:49:04 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-30 13:49:20 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00007132520105150052
+2026-03-30 13:49:20 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-30 13:49:20 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=00007132520105150052
+2026-03-30 13:49:20 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00007132520105150052 → tribunal=trt15
+2026-03-30 13:49:25 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=00007132520105150052: DataJud não retornou resultados para CNJ=00007132520105150052 → ativando fallback
+2026-03-30 13:49:25 │ WARNING  │ pipeline.orquestrador:_coletar_via_scraper:203 - Scraper indisponível para CNJ=00007132520105150052: ScraperCollector não suporta tribunal 'trt15' → tentando Escavador
+2026-03-30 13:49:25 │ INFO     │ pipeline.orquestrador:_coletar_via_escavador:211 - [Escavador] Coleta completa para CNJ=00007132520105150052
+2026-03-30 13:49:25 │ INFO     │ collectors.escavador:collect:73 - [EscavadorCollector] Buscando CNJ=00007132520105150052
+2026-03-30 13:49:30 │ INFO     │ collectors.escavador:_extrair_dados_da_busca:299 - [EscavadorCollector] Da busca: classe=None partes=1
+2026-03-30 13:49:30 │ ERROR    │ pipeline.orquestrador:executar:51 - Erro não tratado ao processar CNJ=00007132520105150052: 1 validation error for DadosCapa
+vara
+  String should have at most 200 characters [type=string_too_long, input_value='do Trabalho de Ituverava...ntonio Marcio Rodrigues', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_too_long
+2026-03-30 13:49:30 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.

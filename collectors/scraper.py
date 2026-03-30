@@ -203,7 +203,7 @@ class ScraperCollector(BaseCollector):
     Outros tribunais lançam CollectorUnavailableError — extensível via _scrape_X.
     """
 
-    TRIBUNAIS_SUPORTADOS = {"tjsp", "tjrj"}
+    TRIBUNAIS_SUPORTADOS = {"tjsp", "tjrj", "tjro"}
 
     def __init__(self, tribunal: str) -> None:
         self._tribunal = tribunal.lower()
@@ -231,6 +231,8 @@ class ScraperCollector(BaseCollector):
                     dados = await self._scrape_tjsp(page, cnj)
                 elif self._tribunal == "tjrj":
                     dados = await self._scrape_tjrj(page, cnj)
+                elif self._tribunal == "tjro":
+                    dados = await self._scrape_pje(page, cnj, "tjro")
                 else:
                     raise CollectorUnavailableError(
                         f"ScraperCollector não tem implementação para '{self._tribunal}'"
@@ -412,6 +414,257 @@ class ScraperCollector(BaseCollector):
                     data_mov=data_mov,
                     descricao=descricao,
                 )
+            )
+
+        return movimentacoes
+
+
+    # ── PJe (Processo Judicial Eletrônico) ────────────────────────────────────
+    # Sistema padrão CNJ usado por vários tribunais.
+    # TJRO: pjepg-consulta.tjro.jus.br (1º grau) / pjesg-consulta.tjro.jus.br (2º grau)
+
+    _PJE_HOSTS: dict[str, tuple[str, str]] = {
+        # tribunal: (host_1grau, host_2grau)
+        "tjro": ("pjepg-consulta.tjro.jus.br", "pjesg-consulta.tjro.jus.br"),
+    }
+
+    async def _scrape_pje(self, page: Page, cnj: str, tribunal: str) -> DadosCapa:
+        """
+        Scraping genérico do portal PJe (Processo Judicial Eletrônico).
+        Usado pelo TJRO e extensível para outros tribunais que adotam o PJe.
+        Tenta 1º grau primeiro; fallback automático para 2º grau.
+        """
+        hosts = self._PJE_HOSTS.get(tribunal)
+        if not hosts:
+            raise CollectorUnavailableError(
+                f"Hosts PJe não configurados para tribunal '{tribunal}'"
+            )
+
+        host_1g, host_2g = hosts
+        cnj_fmt = _formatar_cnj_tjrj(cnj)  # mesmo formato NNNNNNN-DD.AAAA.J.TT.FFFF
+
+        for grau, host in [("1º grau", host_1g), ("2º grau", host_2g)]:
+            url = (
+                f"https://{host}/consulta/ConsultaPublica/listView.seam"
+                f"?numeroProcesso={cnj_fmt}"
+            )
+            logger.debug(f"[ScraperCollector/PJe/{tribunal}] {grau}: {url}")
+
+            try:
+                await page.goto(url, timeout=60_000, wait_until="domcontentloaded")
+                await page.wait_for_load_state("networkidle", timeout=20_000)
+            except PlaywrightTimeout as exc:
+                logger.debug(f"[ScraperCollector/PJe/{tribunal}] Timeout {grau}: {exc}")
+                continue
+
+            titulo = await page.title()
+            logger.debug(f"[ScraperCollector/PJe/{tribunal}] Página: '{titulo}'")
+
+            # Detecta CAPTCHA
+            captcha = await page.query_selector(_SEL_CAPTCHA)
+            if captcha:
+                logger.warning(f"[ScraperCollector/PJe] CAPTCHA detectado CNJ={cnj}")
+                raise CaptchaRequiredError(f"CAPTCHA no PJe {tribunal} CNJ={cnj}")
+
+            # Detecta se processo foi encontrado — PJe mostra link clicável
+            link_processo = await page.query_selector(
+                "a[onclick*='detalhar'], a[href*='detalhe'], "
+                "td.rich-table-cell a, .consulta-processo a"
+            )
+
+            if not link_processo:
+                # Tenta encontrar resultado pelo número no texto da página
+                texto = await page.evaluate("() => document.body.innerText")
+                cnj_digits = re.sub(r"\D", "", cnj)
+                if cnj_digits not in re.sub(r"\D", "", texto):
+                    logger.debug(f"[ScraperCollector/PJe] Não encontrado em {grau}")
+                    continue
+
+            # Clica no link para abrir detalhes (se existir)
+            if link_processo:
+                try:
+                    await link_processo.click()
+                    await page.wait_for_load_state("networkidle", timeout=15_000)
+                except Exception:
+                    pass  # Pode ser que já exiba os dados sem clicar
+
+            capa   = await self._extrair_capa_pje(page)
+            partes = await self._extrair_partes_pje(page)
+            movs   = await self._extrair_movimentacoes_pje(page)
+
+            instancia = "1grau" if grau == "1º grau" else "2grau"
+            logger.info(
+                f"[ScraperCollector/PJe/{tribunal}] Extraído ({grau}): "
+                f"classe={capa.get('classe')!r} partes={len(partes)} movs={len(movs)}"
+            )
+
+            ultima_mov = max((m.data_mov for m in movs), default=None)
+            capa["instancia"] = instancia
+
+            return DadosCapa(
+                cnj=cnj,
+                tribunal=tribunal,
+                fonte="scraping",
+                ultima_mov=ultima_mov,
+                partes=partes,
+                movimentacoes=movs,
+                **capa,
+            )
+
+        raise CollectorUnavailableError(
+            f"Processo CNJ={cnj} não encontrado no PJe {tribunal} (1º e 2º grau)"
+        )
+
+    async def _extrair_capa_pje(self, page: Page) -> dict[str, Any]:
+        """Extrai capa do PJe — usa labels genéricos dt/dd e span com IDs."""
+
+        async def texto(seletor: str) -> str | None:
+            el = await page.query_selector(seletor)
+            if not el:
+                return None
+            t = (await el.inner_text()).strip()
+            return t or None
+
+        async def por_label(*labels: str) -> str | None:
+            for label in labels:
+                el = await page.query_selector(
+                    f"span:has-text('{label}') + span, "
+                    f"td:has-text('{label}') + td, "
+                    f"dt:has-text('{label}') + dd"
+                )
+                if el:
+                    t = (await el.inner_text()).strip()
+                    if t:
+                        return t
+            return None
+
+        classe  = await por_label("Classe", "Classe judicial")
+        assunto = await por_label("Assunto", "Assunto principal")
+        vara    = await por_label("Órgão julgador", "Vara", "Juízo")
+        juiz    = await por_label("Magistrado", "Juiz", "Relator")
+        data    = await por_label("Data de autuação", "Distribuição", "Data")
+        status  = await por_label("Situação", "Status")
+        valor   = await por_label("Valor da causa", "Valor")
+
+        logger.debug(
+            f"[ScraperCollector/PJe] capa: classe={classe!r} vara={vara!r} "
+            f"juiz={juiz!r} data={data!r}"
+        )
+
+        return {
+            "classe": classe,
+            "assunto": assunto,
+            "vara": vara,
+            "juiz": juiz,
+            "valor_causa": _parse_valor(valor) if valor else None,
+            "data_distribuicao": _parse_date_br(data),
+            "status": status,
+            "instancia": None,  # preenchido pelo chamador
+            "raw_json": None,
+        }
+
+    async def _extrair_partes_pje(self, page: Page) -> list[Parte]:
+        """
+        Extrai partes do PJe.
+        O PJe exibe partes em tabela com colunas Polo | Parte | Advogado.
+        """
+        partes: list[Parte] = []
+
+        # PJe usa table com headers Polo / Nome
+        rows = await page.query_selector_all(
+            "table.rich-table tr, table.tabela-partes tr, "
+            ".partes-processo tr, .parte-processo"
+        )
+
+        logger.debug(f"[ScraperCollector/PJe] Partes: {len(rows)} linhas")
+
+        polo_map_pje = {
+            "polo ativo":    "autor",
+            "ativo":         "autor",
+            "autor":         "autor",
+            "requerente":    "autor",
+            "exequente":     "autor",
+            "impetrante":    "autor",
+            "polo passivo":  "reu",
+            "passivo":       "reu",
+            "réu":           "reu",
+            "requerido":     "reu",
+            "executado":     "reu",
+            "impetrado":     "reu",
+            "advogado":      "advogado",
+        }
+
+        for row in rows:
+            cells = await row.query_selector_all("td")
+            if len(cells) < 2:
+                continue
+
+            polo_text = (await cells[0].inner_text()).strip().lower()
+            polo = polo_map_pje.get(polo_text, "outro")
+
+            nome = (await cells[1].inner_text()).strip().split("\n")[0].strip()
+            if not nome or nome.lower() in ("nome", "parte", "polo"):
+                continue
+
+            logger.debug(
+                f"[ScraperCollector/PJe] Parte: polo={polo!r} "
+                f"(raw={polo_text!r}) nome={nome!r}"
+            )
+            partes.append(Parte(polo=polo, nome_tribunal=nome))
+
+        # Fallback: busca por rótulos textuais na página inteira
+        if not partes:
+            partes = await self._extrair_partes_pje_fallback(page)
+
+        return partes
+
+    async def _extrair_partes_pje_fallback(self, page: Page) -> list[Parte]:
+        """Fallback PJe: varre texto da página por padrões de polo."""
+        partes: list[Parte] = []
+        texto: str = await page.evaluate("() => document.body.innerText || ''")
+
+        polo_map = {
+            "polo ativo": "autor", "ativo": "autor",
+            "polo passivo": "reu", "passivo": "reu",
+        }
+        polo_atual: str | None = None
+
+        for linha in texto.split("\n"):
+            ll = linha.strip().lower()
+            if ll in polo_map:
+                polo_atual = polo_map[ll]
+                continue
+            if polo_atual and len(linha.strip()) > 3:
+                palavras = linha.strip().split()
+                if 1 < len(palavras) <= 8:
+                    partes.append(Parte(polo=polo_atual, nome_tribunal=linha.strip()))
+                    polo_atual = None  # uma parte por polo até encontrar outro marcador
+
+        return partes
+
+    async def _extrair_movimentacoes_pje(self, page: Page) -> list[Movimentacao]:
+        """Extrai movimentações do PJe."""
+        movimentacoes: list[Movimentacao] = []
+
+        rows = await page.query_selector_all(
+            "table.rich-table tr, .movimentacao, .andamento, "
+            ".timeline-item, .historico tr"
+        )
+
+        for row in rows:
+            cells = await row.query_selector_all("td")
+            if len(cells) < 2:
+                continue
+
+            data_text = (await cells[0].inner_text()).strip()
+            descricao = (await cells[-1].inner_text()).strip()
+
+            data_mov = _parse_date_br(data_text)
+            if not data_mov or not descricao:
+                continue
+
+            movimentacoes.append(
+                Movimentacao(data_mov=data_mov, descricao=descricao)
             )
 
         return movimentacoes
