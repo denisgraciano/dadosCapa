@@ -1,0 +1,363 @@
+2026-03-29 14:31:06 │ INFO     │ __main__:main:92 - Modo: sync completo → 2 CNJ(s) do .env
+2026-03-29 14:31:06 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 2 CNJ(s)
+2026-03-29 14:31:06 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=10022541820258110018
+2026-03-29 14:31:07 │ WARNING  │ pipeline.orquestrador:_coletar:96 - DatajudCollector falhou para CNJ=10022541820258110018: Tribunal com código '81' não mapeado para CNJ 10022541820258110018 → ativando fallback
+2026-03-29 14:31:07 │ ERROR    │ pipeline.orquestrador:_coletar:108 - Scraper indisponível para CNJ=10022541820258110018: ScraperCollector não suporta tribunal 'desconhecido'
+2026-03-29 14:31:07 │ WARNING  │ pipeline.orquestrador:_processar_cnj:63 - CNJ=10022541820258110018 ignorado — sem dados disponíveis
+2026-03-29 14:31:07 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=01299026120098260011
+2026-03-29 14:31:07 │ WARNING  │ pipeline.orquestrador:_coletar:96 - DatajudCollector falhou para CNJ=01299026120098260011: Tribunal com código '82' não mapeado para CNJ 01299026120098260011 → ativando fallback
+2026-03-29 14:31:07 │ ERROR    │ pipeline.orquestrador:_coletar:108 - Scraper indisponível para CNJ=01299026120098260011: ScraperCollector não suporta tribunal 'desconhecido'
+2026-03-29 14:31:07 │ WARNING  │ pipeline.orquestrador:_processar_cnj:63 - CNJ=01299026120098260011 ignorado — sem dados disponíveis
+2026-03-29 14:31:07 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 14:32:20 │ INFO     │ __main__:main:92 - Modo: sync completo → 1 CNJ(s) do .env
+2026-03-29 14:32:20 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 14:32:20 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=10022541820258110018
+2026-03-29 14:32:21 │ WARNING  │ pipeline.orquestrador:_coletar:96 - DatajudCollector falhou para CNJ=10022541820258110018: Tribunal com código '81' não mapeado para CNJ 10022541820258110018 → ativando fallback
+2026-03-29 14:32:21 │ ERROR    │ pipeline.orquestrador:_coletar:108 - Scraper indisponível para CNJ=10022541820258110018: ScraperCollector não suporta tribunal 'desconhecido'
+2026-03-29 14:32:21 │ WARNING  │ pipeline.orquestrador:_processar_cnj:63 - CNJ=10022541820258110018 ignorado — sem dados disponíveis
+2026-03-29 14:32:21 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 14:32:51 │ INFO     │ __main__:main:92 - Modo: sync completo → 1 CNJ(s) do .env
+2026-03-29 14:32:51 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 14:32:51 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=10000281919928260361
+2026-03-29 14:32:51 │ WARNING  │ pipeline.orquestrador:_coletar:96 - DatajudCollector falhou para CNJ=10000281919928260361: Tribunal com código '82' não mapeado para CNJ 10000281919928260361 → ativando fallback
+2026-03-29 14:32:51 │ ERROR    │ pipeline.orquestrador:_coletar:108 - Scraper indisponível para CNJ=10000281919928260361: ScraperCollector não suporta tribunal 'desconhecido'
+2026-03-29 14:32:51 │ WARNING  │ pipeline.orquestrador:_processar_cnj:63 - CNJ=10000281919928260361 ignorado — sem dados disponíveis
+2026-03-29 14:32:51 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 14:33:20 │ INFO     │ __main__:main:92 - Modo: sync completo → 1 CNJ(s) do .env
+2026-03-29 14:33:20 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 14:33:20 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=01299026120098260011
+2026-03-29 14:33:20 │ WARNING  │ pipeline.orquestrador:_coletar:96 - DatajudCollector falhou para CNJ=01299026120098260011: Tribunal com código '82' não mapeado para CNJ 01299026120098260011 → ativando fallback
+2026-03-29 14:33:20 │ ERROR    │ pipeline.orquestrador:_coletar:108 - Scraper indisponível para CNJ=01299026120098260011: ScraperCollector não suporta tribunal 'desconhecido'
+2026-03-29 14:33:20 │ WARNING  │ pipeline.orquestrador:_processar_cnj:63 - CNJ=01299026120098260011 ignorado — sem dados disponíveis
+2026-03-29 14:33:20 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 14:34:19 │ INFO     │ __main__:main:92 - Modo: sync completo → 1 CNJ(s) do .env
+2026-03-29 14:34:19 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 14:34:19 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=01279822700008260090
+2026-03-29 14:34:20 │ WARNING  │ pipeline.orquestrador:_coletar:96 - DatajudCollector falhou para CNJ=01279822700008260090: Tribunal com código '82' não mapeado para CNJ 01279822700008260090 → ativando fallback
+2026-03-29 14:34:20 │ ERROR    │ pipeline.orquestrador:_coletar:108 - Scraper indisponível para CNJ=01279822700008260090: ScraperCollector não suporta tribunal 'desconhecido'
+2026-03-29 14:34:20 │ WARNING  │ pipeline.orquestrador:_processar_cnj:63 - CNJ=01279822700008260090 ignorado — sem dados disponíveis
+2026-03-29 14:34:20 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 14:34:46 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 10022541820258110018
+2026-03-29 14:34:46 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 14:34:46 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=10022541820258110018
+2026-03-29 14:34:47 │ WARNING  │ pipeline.orquestrador:_coletar:96 - DatajudCollector falhou para CNJ=10022541820258110018: Tribunal com código '81' não mapeado para CNJ 10022541820258110018 → ativando fallback
+2026-03-29 14:34:47 │ ERROR    │ pipeline.orquestrador:_coletar:108 - Scraper indisponível para CNJ=10022541820258110018: ScraperCollector não suporta tribunal 'desconhecido'
+2026-03-29 14:34:47 │ WARNING  │ pipeline.orquestrador:_processar_cnj:63 - CNJ=10022541820258110018 ignorado — sem dados disponíveis
+2026-03-29 14:34:47 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 14:35:42 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 10022541820258110018
+2026-03-29 14:35:42 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 14:35:42 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=10022541820258110018
+2026-03-29 14:35:43 │ WARNING  │ pipeline.orquestrador:_coletar:96 - DatajudCollector falhou para CNJ=10022541820258110018: Tribunal com código '81' não mapeado para CNJ 10022541820258110018 → ativando fallback
+2026-03-29 14:35:43 │ ERROR    │ pipeline.orquestrador:_coletar:108 - Scraper indisponível para CNJ=10022541820258110018: ScraperCollector não suporta tribunal 'desconhecido'
+2026-03-29 14:35:43 │ WARNING  │ pipeline.orquestrador:_processar_cnj:63 - CNJ=10022541820258110018 ignorado — sem dados disponíveis
+2026-03-29 14:35:43 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 20:18:34 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 10022541820258110018
+2026-03-29 20:18:34 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 20:18:34 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=10022541820258110018
+2026-03-29 20:18:38 │ ERROR    │ pipeline.orquestrador:executar:50 - Erro não tratado ao processar CNJ=10022541820258110018: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+2026-03-29 20:18:38 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 20:20:09 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 01279822700008260090
+2026-03-29 20:20:09 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 20:20:09 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=01279822700008260090
+2026-03-29 20:20:09 │ WARNING  │ pipeline.orquestrador:_coletar:96 - DatajudCollector falhou para CNJ=01279822700008260090: Tribunal com código '82' não mapeado para CNJ 01279822700008260090 → ativando fallback
+2026-03-29 20:20:09 │ ERROR    │ pipeline.orquestrador:_coletar:108 - Scraper indisponível para CNJ=01279822700008260090: ScraperCollector não suporta tribunal 'desconhecido'
+2026-03-29 20:20:09 │ WARNING  │ pipeline.orquestrador:_processar_cnj:63 - CNJ=01279822700008260090 ignorado — sem dados disponíveis
+2026-03-29 20:20:09 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 20:20:20 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 01279822700008260090
+2026-03-29 20:20:21 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 20:20:21 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=01279822700008260090
+2026-03-29 20:20:21 │ WARNING  │ pipeline.orquestrador:_coletar:96 - DatajudCollector falhou para CNJ=01279822700008260090: Tribunal com código '82' não mapeado para CNJ 01279822700008260090 → ativando fallback
+2026-03-29 20:20:21 │ ERROR    │ pipeline.orquestrador:_coletar:108 - Scraper indisponível para CNJ=01279822700008260090: ScraperCollector não suporta tribunal 'desconhecido'
+2026-03-29 20:20:21 │ WARNING  │ pipeline.orquestrador:_processar_cnj:63 - CNJ=01279822700008260090 ignorado — sem dados disponíveis
+2026-03-29 20:20:21 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 20:24:03 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 01279822700008260090
+2026-03-29 20:24:03 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 20:24:03 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=01279822700008260090
+2026-03-29 20:24:03 │ INFO     │ collectors.datajud:collect:206 - [DatajudCollector] Consultando CNJ=01279822700008260090 → tribunal=tjsp
+2026-03-29 20:24:04 │ ERROR    │ pipeline.orquestrador:executar:50 - Erro não tratado ao processar CNJ=01279822700008260090: 1 validation error for Movimentacao
+complemento
+  Input should be a valid string [type=string_type, input_value={'codigo': 18, 'valor': 4...o': 'motivo_da_remessa'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-03-29 20:24:04 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 20:28:59 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 01279822700008260090
+2026-03-29 20:28:59 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 20:28:59 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=01279822700008260090
+2026-03-29 20:28:59 │ INFO     │ collectors.datajud:collect:206 - [DatajudCollector] Consultando CNJ=01279822700008260090 → tribunal=tjsp
+2026-03-29 20:29:02 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=1 │ fonte=datajud
+2026-03-29 20:29:02 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 73 novas de 77 coletadas
+2026-03-29 20:29:02 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 20:32:53 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 10000281919928260361
+2026-03-29 20:32:54 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 20:32:54 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=10000281919928260361
+2026-03-29 20:32:54 │ INFO     │ collectors.datajud:collect:206 - [DatajudCollector] Consultando CNJ=10000281919928260361 → tribunal=tjsp
+2026-03-29 20:33:00 │ WARNING  │ pipeline.orquestrador:_coletar:96 - DatajudCollector falhou para CNJ=10000281919928260361: DataJud não retornou resultados para CNJ=10000281919928260361 → ativando fallback
+2026-03-29 20:33:00 │ INFO     │ collectors.scraper:collect:77 - [ScraperCollector] Iniciando scraping CNJ=10000281919928260361 tribunal=tjsp
+2026-03-29 20:33:20 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=2 │ fonte=scraping
+2026-03-29 20:33:20 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 0 novas de 0 coletadas
+2026-03-29 20:33:20 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 20:34:19 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00349259520198260506
+2026-03-29 20:34:20 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 20:34:20 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=00349259520198260506
+2026-03-29 20:34:20 │ INFO     │ collectors.datajud:collect:206 - [DatajudCollector] Consultando CNJ=00349259520198260506 → tribunal=tjsp
+2026-03-29 20:35:55 │ WARNING  │ pipeline.orquestrador:_coletar:96 - DatajudCollector falhou para CNJ=00349259520198260506: Timeout ao consultar DataJud:  → ativando fallback
+2026-03-29 20:35:55 │ INFO     │ collectors.scraper:collect:77 - [ScraperCollector] Iniciando scraping CNJ=00349259520198260506 tribunal=tjsp
+2026-03-29 20:35:57 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=3 │ fonte=scraping
+2026-03-29 20:35:57 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 0 novas de 0 coletadas
+2026-03-29 20:35:57 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 20:45:49 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00349259520198260506
+2026-03-29 20:45:49 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 20:45:49 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=00349259520198260506
+2026-03-29 20:45:50 │ INFO     │ collectors.datajud:collect:206 - [DatajudCollector] Consultando CNJ=00349259520198260506 → tribunal=tjsp
+2026-03-29 20:45:54 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=3 │ fonte=datajud
+2026-03-29 20:45:54 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 24 novas de 24 coletadas
+2026-03-29 20:45:54 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 20:56:07 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00349259520198260506
+2026-03-29 20:56:07 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 20:56:07 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=00349259520198260506
+2026-03-29 20:56:07 │ INFO     │ collectors.datajud:collect:206 - [DatajudCollector] Consultando CNJ=00349259520198260506 → tribunal=tjsp
+2026-03-29 20:56:16 │ INFO     │ collectors.datajud:_parse_source:234 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-29 20:56:16 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=3 │ fonte=datajud
+2026-03-29 20:56:16 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 0 novas de 0 coletadas
+2026-03-29 20:56:16 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 20:58:52 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00349259520198260506
+2026-03-29 20:58:52 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 20:58:52 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=00349259520198260506
+2026-03-29 20:58:52 │ INFO     │ collectors.datajud:collect:206 - [DatajudCollector] Consultando CNJ=00349259520198260506 → tribunal=tjsp
+2026-03-29 20:58:53 │ INFO     │ collectors.datajud:_parse_source:234 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-29 20:58:53 │ WARNING  │ pipeline.orquestrador:_coletar:106 - DataJud não retornou partes para CNJ=00349259520198260506 (LGPD ou tribunal não transmite) → buscando partes via scraper
+2026-03-29 20:58:53 │ INFO     │ collectors.scraper:collect:119 - [ScraperCollector] Iniciando scraping CNJ=00349259520198260506 tribunal=tjsp
+2026-03-29 20:58:58 │ INFO     │ collectors.scraper:_scrape_tjsp:176 - [ScraperCollector] Extraído: classe=None partes=2 movimentações=0
+2026-03-29 20:58:59 │ INFO     │ pipeline.orquestrador:_complementar_partes_scraper:130 - Partes complementadas via scraper para CNJ=00349259520198260506: 2 parte(s) encontrada(s)
+2026-03-29 20:58:59 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=3 │ fonte=datajud
+2026-03-29 20:58:59 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 0 novas de 24 coletadas
+2026-03-29 20:58:59 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 21:01:35 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00349259520198260506
+2026-03-29 21:01:36 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:01:36 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=00349259520198260506
+2026-03-29 21:01:36 │ INFO     │ collectors.datajud:collect:206 - [DatajudCollector] Consultando CNJ=00349259520198260506 → tribunal=tjsp
+2026-03-29 21:02:21 │ INFO     │ collectors.datajud:_parse_source:234 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-29 21:02:21 │ WARNING  │ pipeline.orquestrador:_coletar:117 - DataJud não retornou partes para CNJ=00349259520198260506 (LGPD ou tribunal não transmite) → buscando partes via scraper
+2026-03-29 21:02:21 │ INFO     │ collectors.scraper:collect:119 - [ScraperCollector] Iniciando scraping CNJ=00349259520198260506 tribunal=tjsp
+2026-03-29 21:02:23 │ INFO     │ collectors.scraper:_scrape_tjsp:176 - [ScraperCollector] Extraído: classe=None partes=2 movimentações=0
+2026-03-29 21:02:24 │ INFO     │ pipeline.orquestrador:_complementar_partes_scraper:141 - Partes complementadas via scraper para CNJ=00349259520198260506: 2 parte(s) encontrada(s)
+2026-03-29 21:02:24 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=3 │ fonte=datajud
+2026-03-29 21:02:24 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 0 novas de 0 coletadas
+2026-03-29 21:02:24 │ INFO     │ pipeline.orquestrador:_processar_cnj:79 - Partes coletadas: 2 total │ polos: {'outro'}
+2026-03-29 21:02:24 │ WARNING  │ pipeline.orquestrador:_processar_cnj:92 - Nenhuma parte com polo autor/réu encontrada para CNJ=00349259520198260506 — partes presentes: [('outro', 'DEPARTAMENTO DE ÁGUAS E ESGOTOS DE RIBEIRÃO PRETO - DAERP'), ('outro', 'Mrv Empreendimentos S/A')]
+2026-03-29 21:02:24 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 21:04:30 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 10000281919928260361
+2026-03-29 21:04:30 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:04:30 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=10000281919928260361
+2026-03-29 21:04:31 │ INFO     │ collectors.datajud:collect:206 - [DatajudCollector] Consultando CNJ=10000281919928260361 → tribunal=tjsp
+2026-03-29 21:04:47 │ WARNING  │ pipeline.orquestrador:_coletar:111 - DatajudCollector falhou para CNJ=10000281919928260361: DataJud não retornou resultados para CNJ=10000281919928260361 → ativando fallback
+2026-03-29 21:04:47 │ INFO     │ collectors.scraper:collect:154 - [ScraperCollector] Iniciando scraping CNJ=10000281919928260361 tribunal=tjsp
+2026-03-29 21:04:49 │ INFO     │ collectors.scraper:_scrape_tjsp:211 - [ScraperCollector] Extraído: classe=None partes=0 movimentações=0
+2026-03-29 21:04:50 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=2 │ fonte=scraping
+2026-03-29 21:04:50 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 0 novas de 0 coletadas
+2026-03-29 21:04:50 │ INFO     │ pipeline.orquestrador:_processar_cnj:79 - Partes coletadas: 0 total │ polos: nenhuma
+2026-03-29 21:04:50 │ WARNING  │ pipeline.orquestrador:_processar_cnj:92 - Nenhuma parte com polo autor/réu encontrada para CNJ=10000281919928260361 — partes presentes: []
+2026-03-29 21:04:50 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 21:05:03 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00349259520198260506
+2026-03-29 21:05:03 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:05:03 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=00349259520198260506
+2026-03-29 21:05:03 │ INFO     │ collectors.datajud:collect:206 - [DatajudCollector] Consultando CNJ=00349259520198260506 → tribunal=tjsp
+2026-03-29 21:05:10 │ INFO     │ collectors.datajud:_parse_source:234 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-29 21:05:10 │ WARNING  │ pipeline.orquestrador:_coletar:117 - DataJud não retornou partes para CNJ=00349259520198260506 (LGPD ou tribunal não transmite) → buscando partes via scraper
+2026-03-29 21:05:10 │ INFO     │ collectors.scraper:collect:154 - [ScraperCollector] Iniciando scraping CNJ=00349259520198260506 tribunal=tjsp
+2026-03-29 21:05:12 │ INFO     │ collectors.scraper:_scrape_tjsp:211 - [ScraperCollector] Extraído: classe=None partes=2 movimentações=0
+2026-03-29 21:05:13 │ INFO     │ pipeline.orquestrador:_complementar_partes_scraper:141 - Partes complementadas via scraper para CNJ=00349259520198260506: 2 parte(s) encontrada(s)
+2026-03-29 21:05:13 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=3 │ fonte=datajud
+2026-03-29 21:05:13 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 0 novas de 24 coletadas
+2026-03-29 21:05:13 │ INFO     │ pipeline.orquestrador:_processar_cnj:79 - Partes coletadas: 2 total │ polos: {'reu', 'autor'}
+2026-03-29 21:05:13 │ INFO     │ pipeline.orquestrador:_processar_cnj:85 - Inserindo 2 partes e validando 2 autor/réu
+2026-03-29 21:05:13 │ INFO     │ pipeline.orquestrador:_processar_cnj:87 - IDs inseridos/existentes: [1, 2]
+2026-03-29 21:05:13 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'DEPARTAMENTO DE ÁGUAS E ESGOTOS DE RIBEIRÃO PRETO - DAERP': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYHdsNg9dVVSq9orGo7t'}
+2026-03-29 21:05:13 │ INFO     │ pipeline.orquestrador:_log_validacao:213 - ✗ SEM_MATCH 'DEPARTAMENTO DE ÁGUAS E ESGOTOS DE RIBEIRÃO PRETO - DAERP' → '—' │ score=0.000
+2026-03-29 21:05:14 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Mrv Empreendimentos S/A': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYHdtF1ce2nkmjLwQPpL'}
+2026-03-29 21:05:14 │ INFO     │ pipeline.orquestrador:_log_validacao:213 - ✗ SEM_MATCH 'Mrv Empreendimentos S/A' → '—' │ score=0.000
+2026-03-29 21:05:14 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 21:06:51 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00057857620148260575
+2026-03-29 21:06:52 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:06:52 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=00057857620148260575
+2026-03-29 21:06:52 │ INFO     │ collectors.datajud:collect:206 - [DatajudCollector] Consultando CNJ=00057857620148260575 → tribunal=tjsp
+2026-03-29 21:07:11 │ INFO     │ collectors.datajud:_parse_source:234 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-29 21:07:11 │ WARNING  │ pipeline.orquestrador:_coletar:117 - DataJud não retornou partes para CNJ=00057857620148260575 (LGPD ou tribunal não transmite) → buscando partes via scraper
+2026-03-29 21:07:11 │ INFO     │ collectors.scraper:collect:154 - [ScraperCollector] Iniciando scraping CNJ=00057857620148260575 tribunal=tjsp
+2026-03-29 21:07:14 │ INFO     │ collectors.scraper:_scrape_tjsp:211 - [ScraperCollector] Extraído: classe='Execução Fiscal' partes=2 movimentações=0
+2026-03-29 21:07:14 │ INFO     │ pipeline.orquestrador:_complementar_partes_scraper:141 - Partes complementadas via scraper para CNJ=00057857620148260575: 2 parte(s) encontrada(s)
+2026-03-29 21:07:14 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=10 │ fonte=datajud
+2026-03-29 21:07:14 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 24 novas de 24 coletadas
+2026-03-29 21:07:14 │ INFO     │ pipeline.orquestrador:_processar_cnj:79 - Partes coletadas: 2 total │ polos: {'autor', 'reu'}
+2026-03-29 21:07:14 │ INFO     │ pipeline.orquestrador:_processar_cnj:85 - Inserindo 2 partes e validando 2 autor/réu
+2026-03-29 21:07:14 │ INFO     │ pipeline.orquestrador:_processar_cnj:87 - IDs inseridos/existentes: [3, 4]
+2026-03-29 21:07:14 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'União Federal - PRFN': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYHnn2i9yHmvPfZFJDEz'}
+2026-03-29 21:07:14 │ INFO     │ pipeline.orquestrador:_log_validacao:213 - ✗ SEM_MATCH 'União Federal - PRFN' → '—' │ score=0.000
+2026-03-29 21:07:14 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Nestlé Brasil Ltda': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYHnnq5X35abp1U9pXYZ'}
+2026-03-29 21:07:14 │ INFO     │ pipeline.orquestrador:_log_validacao:213 - ✗ SEM_MATCH 'Nestlé Brasil Ltda' → '—' │ score=0.000
+2026-03-29 21:07:14 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 21:09:42 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 15122397920208260577
+2026-03-29 21:09:42 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:09:42 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=15122397920208260577
+2026-03-29 21:09:42 │ INFO     │ collectors.datajud:collect:206 - [DatajudCollector] Consultando CNJ=15122397920208260577 → tribunal=tjsp
+2026-03-29 21:09:57 │ INFO     │ collectors.datajud:_parse_source:234 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-29 21:09:57 │ WARNING  │ pipeline.orquestrador:_coletar:117 - DataJud não retornou partes para CNJ=15122397920208260577 (LGPD ou tribunal não transmite) → buscando partes via scraper
+2026-03-29 21:09:57 │ INFO     │ collectors.scraper:collect:154 - [ScraperCollector] Iniciando scraping CNJ=15122397920208260577 tribunal=tjsp
+2026-03-29 21:09:59 │ INFO     │ collectors.scraper:_scrape_tjsp:211 - [ScraperCollector] Extraído: classe='Execução Fiscal' partes=6 movimentações=0
+2026-03-29 21:09:59 │ INFO     │ pipeline.orquestrador:_complementar_partes_scraper:141 - Partes complementadas via scraper para CNJ=15122397920208260577: 6 parte(s) encontrada(s)
+2026-03-29 21:09:59 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=11 │ fonte=datajud
+2026-03-29 21:09:59 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 30 novas de 30 coletadas
+2026-03-29 21:10:00 │ INFO     │ pipeline.orquestrador:_processar_cnj:79 - Partes coletadas: 6 total │ polos: {'reu', 'autor'}
+2026-03-29 21:10:00 │ INFO     │ pipeline.orquestrador:_processar_cnj:85 - Inserindo 6 partes e validando 6 autor/réu
+2026-03-29 21:10:00 │ INFO     │ pipeline.orquestrador:_processar_cnj:87 - IDs inseridos/existentes: [5, 6, 5, 6, 9, 10]
+2026-03-29 21:10:00 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'PREFEITURA MUNICIPAL DE SÃO JOSÉ DOS CAMPOS': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYHzzE21XxAMfdeXmTGU'}
+2026-03-29 21:10:00 │ INFO     │ pipeline.orquestrador:_log_validacao:213 - ✗ SEM_MATCH 'PREFEITURA MUNICIPAL DE SÃO JOSÉ DOS CAMPOS' → '—' │ score=0.000
+2026-03-29 21:10:00 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Graciano Decoracoes Ltda Me': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYJ115Mzu2ErbN4XiPX8'}
+2026-03-29 21:10:00 │ INFO     │ pipeline.orquestrador:_log_validacao:213 - ✗ SEM_MATCH 'Graciano Decoracoes Ltda Me' → '—' │ score=0.000
+2026-03-29 21:10:00 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'PREFEITURA MUNICIPAL DE SÃO JOSÉ DOS CAMPOS': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYJ12ALySuZowVohDoKw'}
+2026-03-29 21:10:00 │ INFO     │ pipeline.orquestrador:_log_validacao:213 - ✗ SEM_MATCH 'PREFEITURA MUNICIPAL DE SÃO JOSÉ DOS CAMPOS' → '—' │ score=0.000
+2026-03-29 21:10:01 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Graciano Decoracoes Ltda Me': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYJ13FLFdPmJTv9fr9sS'}
+2026-03-29 21:10:01 │ INFO     │ pipeline.orquestrador:_log_validacao:213 - ✗ SEM_MATCH 'Graciano Decoracoes Ltda Me' → '—' │ score=0.000
+2026-03-29 21:10:01 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Denis Graciano': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYJ145h6pmTa4kfPnnv5'}
+2026-03-29 21:10:01 │ INFO     │ pipeline.orquestrador:_log_validacao:213 - ✗ SEM_MATCH 'Denis Graciano' → '—' │ score=0.000
+2026-03-29 21:10:01 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Gracielli Nuzzi Graciano': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYJ156xT4quf6wTKvtcH'}
+2026-03-29 21:10:01 │ INFO     │ pipeline.orquestrador:_log_validacao:213 - ✗ SEM_MATCH 'Gracielli Nuzzi Graciano' → '—' │ score=0.000
+2026-03-29 21:10:01 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 21:14:09 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 08057371920248190029
+2026-03-29 21:14:09 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:14:09 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=08057371920248190029
+2026-03-29 21:14:09 │ INFO     │ collectors.datajud:collect:206 - [DatajudCollector] Consultando CNJ=08057371920248190029 → tribunal=tjma
+2026-03-29 21:14:14 │ WARNING  │ pipeline.orquestrador:_coletar:111 - DatajudCollector falhou para CNJ=08057371920248190029: DataJud não retornou resultados para CNJ=08057371920248190029 → ativando fallback
+2026-03-29 21:14:14 │ ERROR    │ pipeline.orquestrador:_coletar_via_scraper:169 - Scraper indisponível para CNJ=08057371920248190029: ScraperCollector não suporta tribunal 'tjma'
+2026-03-29 21:14:14 │ WARNING  │ pipeline.orquestrador:_processar_cnj:63 - CNJ=08057371920248190029 ignorado — sem dados disponíveis
+2026-03-29 21:14:14 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 21:19:34 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 08057371920248190029
+2026-03-29 21:19:34 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:19:34 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=08057371920248190029
+2026-03-29 21:19:34 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=08057371920248190029 → tribunal=tjrj
+2026-03-29 21:19:40 │ INFO     │ collectors.datajud:_parse_source:244 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-29 21:19:40 │ WARNING  │ pipeline.orquestrador:_coletar:117 - DataJud não retornou partes para CNJ=08057371920248190029 (LGPD ou tribunal não transmite) → buscando partes via scraper
+2026-03-29 21:19:40 │ INFO     │ collectors.scraper:collect:218 - [ScraperCollector] Iniciando scraping CNJ=08057371920248190029 tribunal=tjrj
+2026-03-29 21:19:47 │ WARNING  │ collectors.scraper:_scrape_tjrj:449 - [ScraperCollector/TJRJ] CAPTCHA detectado para CNJ=08057371920248190029
+2026-03-29 21:19:47 │ WARNING  │ pipeline.orquestrador:_complementar_partes_scraper:152 - Scraper bloqueado por CAPTCHA ao complementar partes CNJ=08057371920248190029: CAPTCHA bloqueou scraping TJ-RJ CNJ=08057371920248190029
+2026-03-29 21:19:47 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=12 │ fonte=datajud
+2026-03-29 21:19:48 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 39 novas de 39 coletadas
+2026-03-29 21:19:48 │ INFO     │ pipeline.orquestrador:_processar_cnj:79 - Partes coletadas: 0 total │ polos: nenhuma
+2026-03-29 21:19:48 │ WARNING  │ pipeline.orquestrador:_processar_cnj:92 - Nenhuma parte com polo autor/réu encontrada para CNJ=08057371920248190029 — partes presentes: []
+2026-03-29 21:19:48 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 21:22:34 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 08161218620248190014
+2026-03-29 21:22:34 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:22:34 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=08161218620248190014
+2026-03-29 21:22:34 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=08161218620248190014 → tribunal=tjrj
+2026-03-29 21:22:48 │ INFO     │ collectors.datajud:_parse_source:244 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-29 21:22:48 │ WARNING  │ pipeline.orquestrador:_coletar:117 - DataJud não retornou partes para CNJ=08161218620248190014 (LGPD ou tribunal não transmite) → buscando partes via scraper
+2026-03-29 21:22:48 │ INFO     │ collectors.scraper:collect:218 - [ScraperCollector] Iniciando scraping CNJ=08161218620248190014 tribunal=tjrj
+2026-03-29 21:22:55 │ WARNING  │ collectors.scraper:_scrape_tjrj:449 - [ScraperCollector/TJRJ] CAPTCHA detectado para CNJ=08161218620248190014
+2026-03-29 21:22:55 │ WARNING  │ pipeline.orquestrador:_complementar_partes_scraper:152 - Scraper bloqueado por CAPTCHA ao complementar partes CNJ=08161218620248190014: CAPTCHA bloqueou scraping TJ-RJ CNJ=08161218620248190014
+2026-03-29 21:22:56 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=13 │ fonte=datajud
+2026-03-29 21:22:56 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 17 novas de 17 coletadas
+2026-03-29 21:22:56 │ INFO     │ pipeline.orquestrador:_processar_cnj:79 - Partes coletadas: 0 total │ polos: nenhuma
+2026-03-29 21:22:56 │ WARNING  │ pipeline.orquestrador:_processar_cnj:92 - Nenhuma parte com polo autor/réu encontrada para CNJ=08161218620248190014 — partes presentes: []
+2026-03-29 21:22:56 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 21:23:26 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 00130199420008260286
+2026-03-29 21:23:26 │ INFO     │ pipeline.orquestrador:executar:43 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:23:26 │ INFO     │ pipeline.orquestrador:_processar_cnj:56 - ── Iniciando CNJ=00130199420008260286
+2026-03-29 21:23:26 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=00130199420008260286 → tribunal=tjsp
+2026-03-29 21:23:34 │ INFO     │ collectors.datajud:_parse_source:244 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-29 21:23:34 │ WARNING  │ pipeline.orquestrador:_coletar:117 - DataJud não retornou partes para CNJ=00130199420008260286 (LGPD ou tribunal não transmite) → buscando partes via scraper
+2026-03-29 21:23:34 │ INFO     │ collectors.scraper:collect:218 - [ScraperCollector] Iniciando scraping CNJ=00130199420008260286 tribunal=tjsp
+2026-03-29 21:23:36 │ INFO     │ collectors.scraper:_scrape_tjsp:282 - [ScraperCollector] Extraído: classe='Execução Fiscal' partes=2 movimentações=0
+2026-03-29 21:23:36 │ INFO     │ pipeline.orquestrador:_complementar_partes_scraper:141 - Partes complementadas via scraper para CNJ=00130199420008260286: 2 parte(s) encontrada(s)
+2026-03-29 21:23:36 │ INFO     │ pipeline.orquestrador:_processar_cnj:68 - Capa persistida │ processo_id=14 │ fonte=datajud
+2026-03-29 21:23:36 │ INFO     │ pipeline.orquestrador:_processar_cnj:73 - Movimentações: 39 novas de 48 coletadas
+2026-03-29 21:23:36 │ INFO     │ pipeline.orquestrador:_processar_cnj:79 - Partes coletadas: 2 total │ polos: {'reu', 'autor'}
+2026-03-29 21:23:36 │ INFO     │ pipeline.orquestrador:_processar_cnj:85 - Inserindo 2 partes e validando 2 autor/réu
+2026-03-29 21:23:36 │ INFO     │ pipeline.orquestrador:_processar_cnj:87 - IDs inseridos/existentes: [11, 12]
+2026-03-29 21:23:36 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'União Federal - PRFN': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYK3AgEWCYBE3oyCnafd'}
+2026-03-29 21:23:36 │ INFO     │ pipeline.orquestrador:_log_validacao:213 - ✗ SEM_MATCH 'União Federal - PRFN' → '—' │ score=0.000
+2026-03-29 21:23:37 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Melg Industria e Comercio Ltda': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYK3BgGA1tWERauV76SG'}
+2026-03-29 21:23:37 │ INFO     │ pipeline.orquestrador:_log_validacao:213 - ✗ SEM_MATCH 'Melg Industria e Comercio Ltda' → '—' │ score=0.000
+2026-03-29 21:23:37 │ INFO     │ pipeline.orquestrador:executar:52 - Sync concluído.
+2026-03-29 21:31:27 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 08161218620248190014
+2026-03-29 21:31:28 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:31:28 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=08161218620248190014
+2026-03-29 21:31:28 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=08161218620248190014 → tribunal=tjrj
+2026-03-29 21:31:34 │ INFO     │ collectors.datajud:_parse_source:244 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-29 21:31:34 │ WARNING  │ pipeline.orquestrador:_coletar:118 - DataJud não retornou partes para CNJ=08161218620248190014 (LGPD ou tribunal não transmite) → buscando partes via scraper
+2026-03-29 21:31:34 │ INFO     │ collectors.scraper:collect:218 - [ScraperCollector] Iniciando scraping CNJ=08161218620248190014 tribunal=tjrj
+2026-03-29 21:31:45 │ WARNING  │ collectors.scraper:_scrape_tjrj:449 - [ScraperCollector/TJRJ] CAPTCHA detectado para CNJ=08161218620248190014
+2026-03-29 21:31:45 │ WARNING  │ pipeline.orquestrador:_complementar_partes_scraper:153 - CAPTCHA no scraper para CNJ=08161218620248190014: CAPTCHA bloqueou scraping TJ-RJ CNJ=08161218620248190014 → ativando Escavador como fallback
+2026-03-29 21:31:45 │ WARNING  │ pipeline.orquestrador:_complementar_partes_escavador:183 - Escavador indisponível para CNJ=08161218620248190014: ESCAVADOR_API_KEY não configurada no .env — obtenha em https://api.escavador.com/
+2026-03-29 21:31:45 │ INFO     │ pipeline.orquestrador:_processar_cnj:69 - Capa persistida │ processo_id=13 │ fonte=datajud
+2026-03-29 21:31:45 │ INFO     │ pipeline.orquestrador:_processar_cnj:74 - Movimentações: 0 novas de 0 coletadas
+2026-03-29 21:31:45 │ INFO     │ pipeline.orquestrador:_processar_cnj:80 - Partes coletadas: 0 total │ polos: nenhuma
+2026-03-29 21:31:45 │ WARNING  │ pipeline.orquestrador:_processar_cnj:93 - Nenhuma parte com polo autor/réu encontrada para CNJ=08161218620248190014 — partes presentes: []
+2026-03-29 21:31:45 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-29 21:46:57 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 08161218620248190014
+2026-03-29 21:46:57 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:46:57 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=08161218620248190014
+2026-03-29 21:46:57 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=08161218620248190014 → tribunal=tjrj
+2026-03-29 21:47:10 │ INFO     │ collectors.datajud:_parse_source:244 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-29 21:47:10 │ WARNING  │ pipeline.orquestrador:_coletar:118 - DataJud não retornou partes para CNJ=08161218620248190014 (LGPD ou tribunal não transmite) → buscando partes via scraper
+2026-03-29 21:47:10 │ INFO     │ collectors.scraper:collect:218 - [ScraperCollector] Iniciando scraping CNJ=08161218620248190014 tribunal=tjrj
+2026-03-29 21:47:18 │ WARNING  │ collectors.scraper:_scrape_tjrj:449 - [ScraperCollector/TJRJ] CAPTCHA detectado para CNJ=08161218620248190014
+2026-03-29 21:47:18 │ WARNING  │ pipeline.orquestrador:_complementar_partes_scraper:153 - CAPTCHA no scraper para CNJ=08161218620248190014: CAPTCHA bloqueou scraping TJ-RJ CNJ=08161218620248190014 → ativando Escavador como fallback
+2026-03-29 21:47:18 │ INFO     │ collectors.escavador:collect:83 - [EscavadorCollector] Buscando CNJ=08161218620248190014
+2026-03-29 21:47:25 │ WARNING  │ pipeline.orquestrador:_complementar_partes_escavador:183 - Escavador indisponível para CNJ=08161218620248190014: Processo CNJ=08161218620248190014 não encontrado no Escavador
+2026-03-29 21:47:25 │ INFO     │ pipeline.orquestrador:_processar_cnj:69 - Capa persistida │ processo_id=13 │ fonte=datajud
+2026-03-29 21:47:25 │ INFO     │ pipeline.orquestrador:_processar_cnj:74 - Movimentações: 0 novas de 17 coletadas
+2026-03-29 21:47:25 │ INFO     │ pipeline.orquestrador:_processar_cnj:80 - Partes coletadas: 0 total │ polos: nenhuma
+2026-03-29 21:47:25 │ WARNING  │ pipeline.orquestrador:_processar_cnj:93 - Nenhuma parte com polo autor/réu encontrada para CNJ=08161218620248190014 — partes presentes: []
+2026-03-29 21:47:25 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-29 21:48:37 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 01597980820118260100
+2026-03-29 21:48:37 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:48:37 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=01597980820118260100
+2026-03-29 21:48:37 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=01597980820118260100 → tribunal=tjsp
+2026-03-29 21:48:51 │ WARNING  │ pipeline.orquestrador:_coletar:112 - DatajudCollector falhou para CNJ=01597980820118260100: DataJud não retornou resultados para CNJ=01597980820118260100 → ativando fallback
+2026-03-29 21:48:51 │ INFO     │ collectors.scraper:collect:218 - [ScraperCollector] Iniciando scraping CNJ=01597980820118260100 tribunal=tjsp
+2026-03-29 21:48:53 │ INFO     │ collectors.scraper:_scrape_tjsp:282 - [ScraperCollector] Extraído: classe='Procedimento Comum Cível' partes=5 movimentações=0
+2026-03-29 21:48:54 │ INFO     │ pipeline.orquestrador:_processar_cnj:69 - Capa persistida │ processo_id=17 │ fonte=scraping
+2026-03-29 21:48:54 │ INFO     │ pipeline.orquestrador:_processar_cnj:74 - Movimentações: 0 novas de 0 coletadas
+2026-03-29 21:48:54 │ INFO     │ pipeline.orquestrador:_processar_cnj:80 - Partes coletadas: 5 total │ polos: {'reu', 'autor'}
+2026-03-29 21:48:54 │ INFO     │ pipeline.orquestrador:_processar_cnj:86 - Inserindo 5 partes e validando 5 autor/réu
+2026-03-29 21:48:54 │ INFO     │ pipeline.orquestrador:_processar_cnj:88 - IDs inseridos/existentes: [13, 14, 13, 14, 17]
+2026-03-29 21:48:54 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Libreria Editora Ltda': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYLy4H95d8SJ4N8rUzj2'}
+2026-03-29 21:48:54 │ INFO     │ pipeline.orquestrador:_log_validacao:241 - ✗ SEM_MATCH 'Libreria Editora Ltda' → '—' │ score=0.000
+2026-03-29 21:48:54 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Serma Serviços Medicos Assistenciais Ltda': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYLy57Vo72FpJtiKamBh'}
+2026-03-29 21:48:54 │ INFO     │ pipeline.orquestrador:_log_validacao:241 - ✗ SEM_MATCH 'Serma Serviços Medicos Assistenciais Ltda' → '—' │ score=0.000
+2026-03-29 21:48:55 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Libreria Editora Ltda': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYLy5yq4Hr1a9ALKbeGU'}
+2026-03-29 21:48:55 │ INFO     │ pipeline.orquestrador:_log_validacao:241 - ✗ SEM_MATCH 'Libreria Editora Ltda' → '—' │ score=0.000
+2026-03-29 21:48:55 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Serma Serviços Medicos Assistenciais Ltda': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYLy6mxYDEtLvdz4ThiU'}
+2026-03-29 21:48:55 │ INFO     │ pipeline.orquestrador:_log_validacao:241 - ✗ SEM_MATCH 'Serma Serviços Medicos Assistenciais Ltda' → '—' │ score=0.000
+2026-03-29 21:48:55 │ ERROR    │ ai.validador_partes:validar:75 - [ValidadorPartes] Erro na API Claude para 'Greenline Sistema de Saúde Ltda': Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CZYLy7ZqAf9BP2mkrhnua'}
+2026-03-29 21:48:55 │ INFO     │ pipeline.orquestrador:_log_validacao:241 - ✗ SEM_MATCH 'Greenline Sistema de Saúde Ltda' → '—' │ score=0.000
+2026-03-29 21:48:55 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-29 21:50:28 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 08057371920248190029
+2026-03-29 21:50:28 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:50:28 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=08057371920248190029
+2026-03-29 21:50:28 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=08057371920248190029 → tribunal=tjrj
+2026-03-29 21:50:41 │ INFO     │ collectors.datajud:_parse_source:244 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-29 21:50:41 │ WARNING  │ pipeline.orquestrador:_coletar:118 - DataJud não retornou partes para CNJ=08057371920248190029 (LGPD ou tribunal não transmite) → buscando partes via scraper
+2026-03-29 21:50:41 │ INFO     │ collectors.scraper:collect:218 - [ScraperCollector] Iniciando scraping CNJ=08057371920248190029 tribunal=tjrj
+2026-03-29 21:50:44 │ WARNING  │ collectors.scraper:_scrape_tjrj:449 - [ScraperCollector/TJRJ] CAPTCHA detectado para CNJ=08057371920248190029
+2026-03-29 21:50:44 │ WARNING  │ pipeline.orquestrador:_complementar_partes_scraper:153 - CAPTCHA no scraper para CNJ=08057371920248190029: CAPTCHA bloqueou scraping TJ-RJ CNJ=08057371920248190029 → ativando Escavador como fallback
+2026-03-29 21:50:44 │ INFO     │ collectors.escavador:collect:83 - [EscavadorCollector] Buscando CNJ=08057371920248190029
+2026-03-29 21:50:50 │ WARNING  │ pipeline.orquestrador:_complementar_partes_escavador:183 - Escavador indisponível para CNJ=08057371920248190029: Processo CNJ=08057371920248190029 não encontrado no Escavador
+2026-03-29 21:50:50 │ INFO     │ pipeline.orquestrador:_processar_cnj:69 - Capa persistida │ processo_id=12 │ fonte=datajud
+2026-03-29 21:50:50 │ INFO     │ pipeline.orquestrador:_processar_cnj:74 - Movimentações: 0 novas de 0 coletadas
+2026-03-29 21:50:50 │ INFO     │ pipeline.orquestrador:_processar_cnj:80 - Partes coletadas: 0 total │ polos: nenhuma
+2026-03-29 21:50:50 │ WARNING  │ pipeline.orquestrador:_processar_cnj:93 - Nenhuma parte com polo autor/réu encontrada para CNJ=08057371920248190029 — partes presentes: []
+2026-03-29 21:50:50 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
+2026-03-29 21:51:25 │ INFO     │ __main__:main:89 - Modo: sync de CNJ único → 08029868820238180169
+2026-03-29 21:51:25 │ INFO     │ pipeline.orquestrador:executar:44 - Iniciando sync para 1 CNJ(s)
+2026-03-29 21:51:25 │ INFO     │ pipeline.orquestrador:_processar_cnj:57 - ── Iniciando CNJ=08029868820238180169
+2026-03-29 21:51:25 │ INFO     │ collectors.datajud:collect:216 - [DatajudCollector] Consultando CNJ=08029868820238180169 → tribunal=tjpi
+2026-03-29 21:51:29 │ INFO     │ collectors.datajud:_parse_source:244 - [DatajudCollector] Partes extraídas=0 de raw=0
+2026-03-29 21:51:29 │ WARNING  │ pipeline.orquestrador:_coletar:118 - DataJud não retornou partes para CNJ=08029868820238180169 (LGPD ou tribunal não transmite) → buscando partes via scraper
+2026-03-29 21:51:29 │ WARNING  │ pipeline.orquestrador:_complementar_partes_scraper:158 - Scraper indisponível para CNJ=08029868820238180169: ScraperCollector não suporta tribunal 'tjpi' → tentando Escavador
+2026-03-29 21:51:29 │ INFO     │ collectors.escavador:collect:83 - [EscavadorCollector] Buscando CNJ=08029868820238180169
+2026-03-29 21:51:35 │ WARNING  │ pipeline.orquestrador:_complementar_partes_escavador:183 - Escavador indisponível para CNJ=08029868820238180169: Processo CNJ=08029868820238180169 não encontrado no Escavador
+2026-03-29 21:51:36 │ INFO     │ pipeline.orquestrador:_processar_cnj:69 - Capa persistida │ processo_id=19 │ fonte=datajud
+2026-03-29 21:51:36 │ INFO     │ pipeline.orquestrador:_processar_cnj:74 - Movimentações: 31 novas de 34 coletadas
+2026-03-29 21:51:36 │ INFO     │ pipeline.orquestrador:_processar_cnj:80 - Partes coletadas: 0 total │ polos: nenhuma
+2026-03-29 21:51:36 │ WARNING  │ pipeline.orquestrador:_processar_cnj:93 - Nenhuma parte com polo autor/réu encontrada para CNJ=08029868820238180169 — partes presentes: []
+2026-03-29 21:51:36 │ INFO     │ pipeline.orquestrador:executar:53 - Sync concluído.
